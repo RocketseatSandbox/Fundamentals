@@ -1,0 +1,28 @@
+
+Exercise:
+
+==> Create a project containing:
+    - 2 files in directory exercise/: index.html and contact.html
+
+==> Create a directory named as files/
+    - Inside these directory put 2 images and a file called 
+    images.html, that will list the images
+
+==> Inside each HTML file you have to put:
+    - Navigation menu with a unordered list
+    - Title of page in tag h1
+    - One or more paragraphs with page informations
+
+==> Navigation:
+    - Use the tag nav and use the unordered content as the content of nav
+    - Each li must have an anchor tag with href attribute
+    - The content of the link must be the html name page created, each page must have one link
+    - On click, we have to be redirected for the page clicked
+
+==> Page images.html:
+    -  The 2 images must be here, each tag image have to be wrapped by a tag p
+
+==> Page contact.html:
+    - Have to contains the informations of contact: email an phone
+    - Each info have to be inside a link, when clicked, go to the info
+ 
