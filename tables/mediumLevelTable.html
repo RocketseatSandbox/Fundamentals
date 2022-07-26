@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Complete table using now the thead, tbody and tfoot</title>
+  </head>
+  <body>
+    <style>
+      caption {
+        background: black;
+        color: whitesmoke;
+        font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+          "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+        padding: 10px;
+      }
+      table, th, td {
+        border: 1px dotted #00308f;
+      }
+      th, td {
+        padding: 20px;
+        color: black;
+        font-weight: 900;
+        background-color: limegreen;
+      }
+      tfoot > tr > td {
+        background: whitesmoke;
+        border: none;
+      }
+    </style>
+    <table>
+      <caption>
+        Carvalho's Petshop
+      </caption>
+      <thead>
+        <tr>
+          <th>Breed</th>
+          <th>Weigth</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>French bulldog</td>
+          <td>22,7 kg</td>
+        </tr>
+        <tr>
+          <td>Yorkshire</td>
+          <td>12,2 kg</td>
+        </tr>
+        <tr>
+          <td>Husky</td>
+          <td>30 kg</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Collected by:</td>
+          <td>The dog fan</td>
+        </tr>
+      </tfoot>
+    </table>
+  </body>
+</html>
