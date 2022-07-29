@@ -1,0 +1,9 @@
+@import 'https://fonts.googleapis.com/css2?family=Square+Peg&display=swap';
+
+* {
+    font-family: 'Square Peg', cursive;
+}
+
+strong {
+    box-shadow: 10px 5px 5px 10px lightblue;
+}
