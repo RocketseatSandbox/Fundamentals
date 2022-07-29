@@ -1,0 +1,13 @@
+/* 
+   Cascade on browser importance:
+   inline > style > link
+*/
+
+h1 {
+    color: forestgreen;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: purple;
+}
