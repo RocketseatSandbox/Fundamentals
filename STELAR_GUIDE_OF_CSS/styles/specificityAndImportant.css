@@ -1,0 +1,22 @@
+/*
+    0 - Universal selector and the negation pseudo class :not()
+    1 - Tag selector, type selector and pseudo-elements like ::before and ::after 
+    10 - Classes, pseudo classes and attributes selectors
+    100 - ID
+    1000 - Inline
+*/
+
+#theRandomTag {
+    text-align: end;
+}
+
+* {
+    text-align: center;
+    color: blue;
+}
+
+[data-name="titleOne"] {
+    color: brown;
+    font-weight: bolder;
+    text-align: left !important;
+}

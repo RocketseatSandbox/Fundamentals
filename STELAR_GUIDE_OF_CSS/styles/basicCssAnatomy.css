@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-style: italic;
+    font-weight: 600;
+}
+
+h1, h2 {
+    color: blueviolet;
+    font-size: 60px;
+    text-align: center;
+    background: yellowgreen;
+}
+
+hr {
+    border: 1px solid lightslategrey;
+}
+
+#container {
+    width: 50%;
+}
+
+.ml-mr-auto {
+    margin: 0 25%;
+}
