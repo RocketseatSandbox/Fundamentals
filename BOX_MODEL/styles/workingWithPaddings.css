@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box;  
+}
+
+.rainbow {
+    height: 90vh;
+    width: 90vw;
+}
+
+.rainbow > * {
+  position: absolute;
+  left: 35%;
+  bottom: 50%;
+  border-width: 10px;
+  border-top-left-radius:120%;
+  border-bottom-left-radius: 120%;
+  border-top-right-radius: 120%;
+  border-bottom-right-radius: 120%;
+  border-style: solid;
+  width: 30%;
+}
+
+#red-light {
+  padding-bottom: 60px;
+  border-color: red;
+}
+
+#orange-light {
+  padding-bottom: 50px;
+  border-color: orange;
+}
+
+#yellow-light {
+  padding-bottom: 40px;
+  border-color: yellow;
+}
+
+#green-light {
+  padding-bottom: 30px;
+  border-color: green;
+}
+
+#cyan-light {
+  padding-bottom: 20px;
+  border-color: cyan;
+}
+
+#darkblue-light {
+  padding-bottom: 10px;
+  border-color: blue;
+}
+
+#magenta-light {
+  border-color: magenta;
+}
