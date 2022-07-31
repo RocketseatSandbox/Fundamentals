@@ -1,0 +1,38 @@
+/* 
+    Examples of functions: rgb(), hsl(), url() and calc()
+*/
+
+* {
+    margin: 10px auto;
+}
+
+body {
+    text-align: center;
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+    background: hsl(300deg, 100%, 50%);
+}
+
+#container {
+    background: black;
+    height: calc(100% - 60px);
+    width: calc(100% - 50px);
+}
+
+#container::after {
+    content: "Box inside boxes";
+    font-style: italic;
+    color: gold;
+}
+
+#img {
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    height: calc(70% + 20px);
+    width: calc(80% + 20px);
+    background-image: url(https://source.unsplash.com/random);
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
