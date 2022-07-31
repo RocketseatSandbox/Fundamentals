@@ -4,6 +4,7 @@
         <number> = Decimals, positive and negative
         <dimension> = Is a <number> with a unit of measure, like: 2s, 4rem, 45px.
         <percentage> = Can be a <number>, but its a fraction of a reference.
+        <position> = Can be: top, right, bottom, left and center.
     Units:
         <length> = Distance values: px, em, vw
         <angle> = deg, rad, turn
