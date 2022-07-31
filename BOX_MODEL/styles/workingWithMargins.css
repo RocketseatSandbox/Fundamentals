@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+
+#jesus {
+    width: 400px;
+    height: 330px;
+    background-image: url(https://cdnb.artstation.com/p/assets/images/images/029/308/583/medium/raphael-joseph-mary-jesus-pixel-chibi.jpg?1597132920);
+}
+
+#stairs {
+    height: 400px;
+    width: 100%;
+    margin: 0 0 0 18%;
+}
+
+#stairs > * {
+    padding: 10px 0;
+    background: black;
+}
+
+.step-1,
+.step-2,
+.step-3,
+.step-4,
+.step-5 {
+    display: block;
+    font-weight: bolder;
+    font-size: 3rem;
+}
+
+.step-2 {
+    margin-left: -15px;
+}
+
+.step-3 {
+    margin-left: -30px;
+}
+
+.step-4 {
+    margin-left: -45px;
+}
+
+.step-5 {
+    margin-left: -60px;
+}
