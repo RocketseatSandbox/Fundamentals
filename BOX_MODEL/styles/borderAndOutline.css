@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.rgbo-border-box {
+    display: inline-block;
+    height: 200px;
+    width: 200px;
+    margin: 2%;
+    border: 10px solid;
+    border-top-color: red;
+    border-right-color: green;
+    border-bottom-color: blue;
+    border-left-color: orange;
+}
+
+.double-border-box {
+    height: 150px;
+    width: 150px;
+    margin: 15px auto;
+    border: thick double black;
+}
+
+.dashed-border-box {
+    height: 75px;
+    width: 75px;
+    margin: 30px auto;
+    border: 5px dotted black;
+}
+
+.outlined-box {
+    display: inline-block;
+    text-align: center;
+    padding: 90px 0;
+    margin: 2%;
+    width: 200px;
+    height: 200px;
+    background: blueviolet;
+    color: yellowgreen;
+    font-weight: 600;
+    outline: 5px groove honeydew ;
+}
+
+.outlined-text {
+    outline-style: auto;
+    outline-color: yellowgreen;
+}
