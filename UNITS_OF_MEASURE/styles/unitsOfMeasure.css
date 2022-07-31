@@ -1,0 +1,63 @@
+/* 
+    Types:
+        <integer> = Positive and negative, integers
+        <number> = Decimals, positive and negative
+        <dimension> = Is a <number> with a unit of measure, like: 2s, 4rem, 45px.
+        <percentage> = Can be a <number>, but its a fraction of a reference.
+    Units:
+        <length> = Distance values: px, em, vw
+        <angle> = deg, rad, turn
+        <time> = ms, s, m, h, dd, mm, yyyy 
+        <resolution> = Resolution for devices: dpi
+*/
+
+#mainTitle {
+    font-size: 4rem;
+    text-align: center;
+    transform: rotate(180deg);
+}
+
+/* 
+    Absolute distances: cm(96px), in, px
+    Relative distances: rem, em, %, vw, vh
+*/
+
+html {
+    font-size: 50%;
+}
+
+header {
+    border-bottom: 1px dashed black;
+}
+
+.container {
+    margin-top: 10%;
+}
+
+.retangle {
+    margin: auto;
+    border: 1px solid black;
+    font-size: 32px;
+    height: 20rem;
+    width: 10cm;
+}
+
+.ball {
+    margin: 1.5em auto;
+    border: 1px solid black;
+    border-radius: 50%;
+    height: 2em;
+    width: 2em;
+    background: black;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    height: 10vh;
+    width: 99vw;
+    text-align: center;
+    font-size: 2rem;
+    padding-top: 8vh;
+    border-top: 1px dashed black; 
+}
