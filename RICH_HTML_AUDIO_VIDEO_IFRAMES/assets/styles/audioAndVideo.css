@@ -1,0 +1,32 @@
+* {
+    margin: 0;
+    background: rgb(255, 255, 0, 20%);
+}
+
+html {
+    height: 100vh;
+}
+
+.title {
+    font-weight: 900;
+    text-align: center;
+    white-space: pre;
+}
+
+#video-link-options {
+    text-align: center;
+    color: black;
+}
+
+video {
+    margin-bottom: 2rem;
+}
+
+#disclaimer {
+    white-space: pre;
+}
+
+#audio-wrapper {
+    white-space: pre;
+    text-align: center;
+}
