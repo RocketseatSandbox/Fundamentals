@@ -1,0 +1,41 @@
+* {
+    margin: 0;
+}
+
+body {
+    background-color: #6c3a8dc2;
+    
+}
+
+header {
+    height: 150px;
+    border: 7px double purple;
+    padding: 10px;
+    background-color: rgba(51, 3, 65, 0.829);
+    background-image: url(https://www.rocketseat.com.br/assets/logos/rocketseat.svg);
+    background-repeat: no-repeat;
+    background-position: center; /* Can have "xpos" and/ir "ypos" */
+    background-origin: content-box;
+    background-size: 90% 100%; /* May be auto, cover or contain */
+    background-clip: border-box; /* Values here are: border-box, content-box and padding-box */
+}
+
+h1, p {
+    text-align: center;
+    margin: 20px 20px;
+    text-shadow: 3px 3px #0114;
+    z-index: 1000;
+}
+
+p {
+    font-style: oblique;
+    font-stretch: expanded;
+    font-weight: 600;
+    font-size: larger;
+}
+
+main {
+    height: calc(100vh - 170px);
+    z-index: 1;
+    color: azure;
+}

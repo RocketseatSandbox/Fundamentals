@@ -1,0 +1,42 @@
+/* 
+    Reserved keywords for colors:
+    - currentcolor
+    - initial
+    - inherit
+    - unset
+*/
+
+* {
+    background: hsl(100, 24%, 29%);
+    border: 20px double rgba(255, 0, 0, 0.233);
+    box-sizing: border-box;
+    margin: 0;
+}
+
+.box-container {
+    height: 400px;
+    width: 400px;
+    background-color: unset;
+    border: 8px solid #a848;
+    margin: 4% auto 7%;
+}
+
+#boxOne {
+    height: 50%;
+    width: 50%;
+    background-color: rgb(87, 0, 0);
+    border-width: 8px;
+    border-style: solid;
+    border-top-color: blueviolet;
+    border-left-color: blue;
+    border-bottom-color: chocolate;
+    border-right-color: rgb(220, 220, 220);
+}
+
+#boxTwo {
+    height: 50%;
+    width: 50%;
+    border: 8px solid hsla(0, 0%, 0%, 0.781);
+    background-color: aquamarine;
+    margin-left: auto;
+}
