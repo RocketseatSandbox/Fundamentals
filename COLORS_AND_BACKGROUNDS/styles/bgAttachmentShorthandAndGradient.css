@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+}
+
+body {
+    background: linear-gradient(60deg, red, yellow, blue), radial-gradient(hsl(220, 50%, 25%), purple);
+}
+
+h1, p {
+    text-align: center;
+    margin: 20px 20px;
+    text-shadow: 3px 3px #0114;
+    z-index: 1000;
+}
+
+p {
+    font-style: oblique;
+    font-stretch: expanded;
+    font-weight: 600;
+    font-size: larger;
+}
+
+main {
+    color: azure;
+    /* background-color: rgba(51, 3, 65, 0.829);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: content-box;
+    background-size: 90% 100%;
+    background-clip: border-box; 
+    background-attachment: fixed;*/ /* Can be "scroll" too, that's the default */
+    background-image: url(https://www.rocketseat.com.br/assets/logos/rocketseat.svg);
+    background: rgba(51, 3, 65, 0.829) no-repeat center content-box / 90% border-box fixed;
+}
