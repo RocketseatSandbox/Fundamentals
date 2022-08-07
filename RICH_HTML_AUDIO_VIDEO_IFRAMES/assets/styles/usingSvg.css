@@ -1,0 +1,27 @@
+* {
+    top: auto;
+    text-align: center;
+    background: tomato;
+}
+
+body, #main-wrapper {
+    height: 100vh;
+    position: absolute;
+    top: 5%;
+    left: 40%;
+    overflow: hidden;
+}
+
+svg {
+    display: block;
+    margin: auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+#ballFrame {
+    height: 200px;
+    width: 200px;
+    margin: 0;
+    overflow: hidden;
+}

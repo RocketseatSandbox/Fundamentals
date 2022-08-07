@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/styles/audioAndVideo.css" />
+    <title>Audio and video on HTML5</title>
+  </head>
+  <body>
+    <h1 class="title">
+        See the video on the site, on Youtube or download:
+    </h1>
+    <section id="video-link-options">
+      <video 
+        width="300"
+        height="200"
+        poster="https://www.rocketseat.com.br/assets/logos/rocketseat.svg"
+        muted
+        preload="metadata"
+        controls
+      >
+        <source src="./assets/TestimonialRocketseat.mp4" type="video/mp4" />
+      </video>
+      <span id="disclaimer">
+        If you aren't seen the video, click on the link bellow:
+      </span>
+      <a href="https://www.youtube.com/watch?v=8zv9jtqT1x0" target="_blank">Youtube</a>
+      <a href="assets/TestimonialRocketseat.mp4" download>Download</a>
+    </section>
+    <section id="audio-wrapper">
+      <h1 class="title">
+        Listen to the sound of the flute:
+      </h1>
+      <audio 
+        controls
+        muted
+        autoplay
+        preload="auto"
+      >
+        <source src="./assets/fluteSound.mp3" type="audio/mp3">
+      </audio>
+    </section>
+  </body>
+</html>
