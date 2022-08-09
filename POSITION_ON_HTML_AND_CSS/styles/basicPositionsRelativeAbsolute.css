@@ -1,0 +1,50 @@
+/* 
+    - By default all elements are setting per:
+        position: static
+    - All elements who has "relative" or "absolute" value of property position have:
+        top, bottom, left, right, z-index
+*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    background: whitesmoke;
+}
+
+main {
+    margin: 100px;
+    height: 100vh;
+    position: relative;
+    border: 5px solid black;
+}
+
+.box {
+    height: 300px;
+    width: 375px;
+    margin: 5%;
+    border: 1px solid black;
+}
+
+.boxRed {
+    background: red;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    margin: 0;
+}
+
+.boxGreen {
+    background: green;
+    position: absolute;
+    top: 25%;
+    left: 33.4%;
+    margin: 0;
+}
+
+.boxBlue {
+    background: blue;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+}
