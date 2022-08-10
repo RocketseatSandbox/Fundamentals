@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+    background: whitesmoke;
+}
+
+main {
+    margin: 100px;
+    height: 100vh;
+    position: relative;
+    border: 5px solid black;
+}
+
+.box {
+    height: 300px;
+    width: 375px;
+    margin: 5%;
+    border: 1px solid black;
+}
+
+.boxRed {
+    background: red;
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    margin: 0;
+    z-index: 2;
+}
+
+.boxGreen {
+    background: green;
+    position: absolute;
+    top: 75px;
+    left: 75px;
+    margin: 0;
+    z-index: 1;
+}
+
+.boxBlue {
+    background: blue;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    margin: 0;
+    z-index: 0;
+}

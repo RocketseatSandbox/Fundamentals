@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100vw;
+}
+
+.human {
+    height: 250px;
+    width: 250px;
+    border: 1px dashed black;
+    text-align: center;
+}
+
+.humanInRed {
+    background: red;
+}
+
+.humanInBlue {
+    background: blue;
+}
+
+.humanInYellow {
+    background: yellow;
+}
