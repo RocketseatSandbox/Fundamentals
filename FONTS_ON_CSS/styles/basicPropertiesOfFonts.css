@@ -1,0 +1,62 @@
+/* 
+    We've 3 kinds of external font importation: 
+    - @font-face
+    - @import
+    - link 
+*/
+
+@font-face {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-stretch: 100%;
+    src: url(https://fonts.gstatic.com/s/opensans/v29/memSYaGs126MiZpBA-UvWbX2vVnXBbObj2OVZyOOSr4dVJWUgsjZ0B4gaVI.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+    font-family: 'njnaruto';
+    src: URL('../fonts/njnaruto.ttf') format('truetype');
+}
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    background-color: darkgoldenrod;
+}
+
+body {
+    margin: 5%;
+}
+
+h1 {
+    margin-bottom: 20px;
+    font-size: 4vw;
+}
+
+#paragraph-one, #paragraph-two, #paragraph-three {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    padding: 20px;
+    margin: 50px 0;
+    background: white;
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+}
+
+#paragraph-one {
+    font-weight: 300;
+    font-family: 'njnaruto', serif;
+}
+
+#paragraph-two {
+    font-weight: 900;
+    font-style: italic;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#paragraph-three {
+    font-weight: 600;
+    font-size: 25px;
+    font-style: oblique;
+    font-family: 'Square Peg';
+}
