@@ -1,0 +1,54 @@
+/* 
+    Syntax:
+        - text-decoration: line style color
+        - text-align: left center right justify
+        - text-shadow: offset-x offset-y blur-radius color
+        - font: font-style font-variant font-weight font-stretch font-size line-height font-family
+*/
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background: antiquewhite;
+}
+
+h1, #paragraphOne, #paragraphTwo, #paragraphThree, #paragraphFour {
+    margin: 20px 30px;
+}
+
+h1 {
+    font-variant: small-caps;
+    letter-spacing: 10px;
+    text-transform: lowercase;
+    text-decoration: line-through dashed red;
+    margin-top: 5%;
+    transform: rotate(4deg);
+}
+
+#paragraphOne {
+    font-stretch: condensed;
+    word-spacing: 1rem;
+    text-align: justify;
+}
+
+#paragraphTwo {
+    font-stretch: expanded;
+    word-spacing: 1px;
+    line-height: 1.5;
+    text-decoration: underline solid blue;
+    text-align: right;
+}
+
+#paragraphThree {
+    font-stretch: wider;
+    word-spacing: 50px;
+    text-transform: capitalize;
+    text-decoration: overline dotted;
+    text-align: center;
+}
+
+#paragraphFour {
+    text-shadow: 3px 6px 2px purple, 0px -6px red;
+    font: italic normal 700 expanded 1.5rem 1.5 'Verdana';   
+}
