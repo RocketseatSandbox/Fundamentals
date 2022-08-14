@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+}
+
+.buttons-area {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0 40%;
+}
+
+.buttons-area > [type="submit"] {
+    background-color: green;
+    color: white;
+    font-weight: bold;
+}
+
+.buttons-area > [type="reset"] {
+    background-color: red;
+    color: white;
+    font-weight: bold;
+}

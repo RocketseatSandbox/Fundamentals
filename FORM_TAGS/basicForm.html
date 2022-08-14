@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/basicForm.css">
+    <title>Making forms with fieldset legend, label, button and datalist</title>
+</head>
+<!--
+    Attributes of fieldset:
+        - disabled = disable internal fields inner fieldset tag, they'll not sent
+        - form = id of form that the fieldset calls
+        - name = created name for the group
+    Tag legend: First tag inside a fieldset element
+    Attributes of button tag:
+        - type = button, submit, reset
+        - autofocus
+        - disabled
+        - name
+        - value
+        - form
+-->
+<body>
+    <fieldset form="simpleForm" name="simpleData">
+        <legend>Basic formulary</legend>
+        <form id="simpleForm" action="" method="GET">
+            <label>
+                Enter with your full name:
+                <input type="text" name="firstName" placeholder="Type your first name">
+                <input type="text" name="middleName" placeholder="Type your middle name">
+                <input type="text" name="lastName" placeholder="Type your last name">
+            </label>
+            <br><br>
+            <label for="userMail">Email:</label>
+            <input type="email" id="userMail" name="email" placeholder="mail@something.com">
+            <br><br>
+            <datalist id="userType">
+                <option value="ADMIN">Admin</option>
+                <option value="BASIC">Basic</option>
+                <option value="DEV">Developer</option>
+            </datalist>
+            <label for="userTypeData">Select your role:</label>
+            <input id="userTypeData" type="text" name="userType" list="userType" placeholder="Digit or choose an option">
+            <br><br>
+            <datalist id="userFavoriteColor">
+                <option value="#ff0000">Red</option>
+                <option value="#00ff00">Green</option>
+                <option value="#0000ff">Blue</option>
+                <option value="#ffff00">Yellow</option>
+                <option value="#fff">White</option>
+                <option value="#000">Black</option>
+            </datalist>
+            <label for="userFavColor">Choose your favorite color:</label>
+            <input id="userFavColor" type="color" name="userFavoriteColor" list="userFavoriteColor">
+            <br><br>
+            <div class="buttons-area">
+                <button name="buttonState" value="clicked" type="submit" autofocus>Send form data</button>
+                <button type="reset" form="simpleForm">Clear form</button>
+            </div>
+        </form>
+    </fieldset>
+</body>
+</html>
