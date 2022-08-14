@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/kindsOfInputs.css">
+    <title>All about input types</title>
+</head>
+<body>
+    <fieldset id="fieldset-area" form="form-wrapper">
+        <legend>Practice inputs on form</legend>
+        <form id="form-wrapper" action="" method="get">
+            <input type="hidden" name="id" value="1">
+            <datalist id="userProfileColor">
+                <option value="#ff0000"></option>
+                <option value="#ffffff"></option>
+                <option value="#000000"></option>
+            </datalist>
+            <label for="profileColor">Select a color to be displayed on your profile:</label>
+            <input 
+                id="profileColor"
+                type="color" 
+                name="userColor"
+                list="userProfileColor"
+            >
+            <br><br>
+            <label for="userProfilePublic">Do you wanna make your profile public?</label>
+            <label>
+                Public
+                <input 
+                    type="checkbox" 
+                    value="public"
+                    name="userProfilePublic" 
+                    id="userProfilePublic"
+                    checked
+                >
+            </label>
+            <br><br>
+            <label for="userMotherName">Type the first name of your mother:</label>
+            <input 
+                type="text" 
+                value="Not necessary" 
+                id="userMotherName" 
+                readonly
+            >
+            <br><br>
+            <label for="userTelephone">Type your phone number:</label>
+            <input 
+                type="tel" 
+                name="userTelephone" 
+                id="userTelephone" 
+                placeholder="55 35 98888-5554"
+                minlength="9"
+                maxlength="13"
+                autofocus
+            >
+            <br><br>
+            <label for="userEmail">Type your main email and your secondary email if you have one:</label>
+            <input 
+                autocomplete="email"
+                type="email" 
+                name="userMail" 
+                id="userMail"
+                placeholder="mail@provider.com , anotherMail@provider.com"
+                minlength="8"
+                size="40"
+                multiple
+                required
+            >
+            <br><br>
+            <label for="userResume">Upload your personal resume:</label>
+            <input 
+                type="file"
+                accept=".pdf, .doc, .docx, .txt" 
+                name="userResume" 
+                id="userResume"
+                multiple
+            >
+            <br><br>
+            <label for="userBirthday">Fill with your complete birthday:</label>
+            <input type="date" name="userBirthday" id="userBirthday" autocomplete="birthday">
+            <br><br>
+            <label for="userLinkedin">Fill your Linkedin profile:</label>
+            <input 
+                type="url" 
+                name="userLinkedin" 
+                id="userLinkedin"
+                placeholder="https://linkedin.com/your-profile"
+                autocomplete="url"
+                spellcheck="false"
+            >
+            <br><br>
+            <label for="userPassword">Type a new password:</label>
+            <input 
+                autocomplete="new-password"
+                type="password" 
+                name="userPassword" 
+                id="userPassword" 
+                placeholder="***********"
+                pattern="*[A-Za-z0-9_-]{6-30}"
+                title="Preencha sua senha com letras e/ou números sem acentos, de 6 à 30 caracteres."
+                minlength="6"
+                maxlength="30"
+                size="10px"
+                required
+            >
+            <br><br>
+            <label for="userLastSalary">Select one option of month that you receive your last salary:</label>
+            <input type="month" name="userLastSalary" id="userLastSalary">
+            <br><br>
+            <label for="userSalary">Select the new salary that you wanna receive:</label>
+            <input 
+                type="range"
+                value="1500" 
+                min="1000"
+                max="10000"
+                name="userSalary" 
+                id="userSalary"
+                step="1000"
+            >
+            <br><br>
+            <div id="favLangArea">
+                <label style="padding-top: 10px;">
+                    <br>
+                    Select your favorite language:
+                    <br><br>
+                    <label for="html">HTML</label>
+                    <input type="radio" id="html" name="fav_language" value="HTML">
+                    <br><br>
+                    <label for="css">CSS</label>                   
+                    <input type="radio" id="css" name="fav_language" value="CSS">
+                    <br><br>
+                    <label for="javascript">JS</label>
+                    <input type="radio" id="javascript" name="fav_language" value="JavaScript" checked>
+                    <br>
+                </label>   
+            </div>
+            <br><br>
+            <label for="userFeedback">Give your feedback to us:</label>
+            <br>
+            <textarea 
+                name="userFeedback" 
+                id="userFeedback" 
+                cols="50" 
+                rows="10"
+                minlength="20"
+                autocomplete="on"
+                placeholder="Write your text here..."
+                wrap="hard"
+            ></textarea>
+            <br><br>
+            <label for="userOs">Select your favorite OS:</label>
+            <br>
+            <select name="userOs" id="userOs" size="8" multiple>
+                <option value="">Select one or more OS</option>
+                <optgroup label="Mobile">
+                    <option>iOS</option>
+                    <option>Android</option>
+                </optgroup>
+                <optgroup label="Windows based">
+                    <option>Windows</option>
+                    <option>Mac</option>
+                </optgroup>
+                <optgroup label="Linux based">
+                    <option>Fedora</option>
+                    <option>Ubuntu</option>
+                    <option>Kali</option>
+                    <option>Free BSD</option>
+                </optgroup>
+            </select>
+            <br><br>
+            <datalist id="userSearchOptions">
+                <option>Acer Inspiron</option>
+                <option>Acer Predator</option>
+                <option>Acer Nitro 5</option>
+                <option>Vaio i7</option>
+                <option>Vaio i9</option>
+                <option>Macbook Pro</option>
+                <option>Macbook Retina</option>
+            </datalist>
+            <label for="userSearch">Search for the desired notebook for you:</label>
+            <input
+                aria-label="Search for the desired notebook for you:" 
+                type="search" 
+                pattern="[0-9a-zA-Z]"
+                name="userSearch" 
+                id="userSearch" 
+                list="userSearchOptions" 
+                multiple
+            >
+            <br><br>
+            <label for="userJobs">How many places did you work?</label>
+            <input 
+                type="number" 
+                name="userJobs" 
+                id="userJobs"
+                min="0"
+                max="10"
+            >
+            <br><br>
+            <label for="userInterview">Select the perfect data for our conversation:</label>
+            <input 
+                type="datetime-local" 
+                name="userInterview" 
+                id="userInterview"
+                min="2022-10-10 08:00"
+                max="2022-12-25 18:00"
+            >
+            <br><br>
+            <button type="submit">Send data</button>
+            <button type="reset">Clear data</button>
+            <br><br>
+        </form>
+    </fieldset>
+</body>
+</html>

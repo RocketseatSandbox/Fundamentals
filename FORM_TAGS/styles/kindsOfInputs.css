@@ -1,0 +1,42 @@
+* {
+    background: antiquewhite;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#fieldset-area {
+    margin: 2rem;
+    padding: 0;
+}
+
+#favLangArea {
+    border: 1px dotted black;
+    background: white;
+}
+
+form, label {
+    background: white;
+    padding: 10px;
+}
+
+legend {
+    background: white;
+}
+
+input {
+    background: lightgrey;
+}
+
+button[type="submit"] {
+    background: green;
+    color: white;
+}
+
+button[type="reset"] {
+    background: red;
+    color: white;
+}
+
+textarea {
+    resize: none;
+}
