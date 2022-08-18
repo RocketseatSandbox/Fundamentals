@@ -58,7 +58,7 @@ const phoneObj = {
         " -- Has just one owner: " + phoneObj.hasOneOwner
     }
 }
-console.log(phoneObj.allPhoneInfo())
+console.log("MY OBJECT:: ", phoneObj.allPhoneInfo())
 console.log(`
     \n
     =============================
@@ -67,3 +67,17 @@ console.log(`
 /* 
    Using the JS array structure:
 */
+const heterogeneousData = ["Mônica", 27, "F", NaN, false]
+console.log("Using the array structure:: ")
+console.log(heterogeneousData, heterogeneousData[0])
+heterogeneousData.pop()
+console.log(heterogeneousData, heterogeneousData.length)
+heterogeneousData.push(true)
+console.log(heterogeneousData)
+heterogeneousData.unshift(true)
+console.log(heterogeneousData)
+heterogeneousData.shift()
+console.log(heterogeneousData)
+delete heterogeneousData[3]
+console.log(heterogeneousData)
+console.log(heterogeneousData[3], typeof heterogeneousData[3], !!heterogeneousData[3])
