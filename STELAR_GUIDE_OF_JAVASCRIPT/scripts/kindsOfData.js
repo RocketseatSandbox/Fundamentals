@@ -36,3 +36,34 @@ console.log(`
     =============================
     \n
 `)
+/* 
+    Differences between undefined and null:
+*/
+console.log("Using null and undefined on boolean expressions: ", 
+!!null, !!undefined, !!null === !!undefined, null === undefined)
+console.log(`
+    \n
+    =============================
+    \n
+`)
+/* 
+    Practicing JS object:
+*/
+const phoneObj = {
+    name: 'Zenphone 5', 
+    yearOfFabrication: 2015, 
+    hasOneOwner: false,
+    allPhoneInfo: () => { 
+        return "Phone: " + phoneObj.name + " -- Year: " + phoneObj.yearOfFabrication + 
+        " -- Has just one owner: " + phoneObj.hasOneOwner
+    }
+}
+console.log(phoneObj.allPhoneInfo())
+console.log(`
+    \n
+    =============================
+    \n
+`)
+/* 
+   Using the JS array structure:
+*/
