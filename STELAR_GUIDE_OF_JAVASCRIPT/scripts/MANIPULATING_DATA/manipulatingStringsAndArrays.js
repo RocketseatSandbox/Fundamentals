@@ -33,7 +33,43 @@ console.log(
     typeof DECIMALS,
     DECIMALS_CONSTRUCTOR === DECIMALS
 )
+console.log("=============================")
 
 /* 
     Elements of array and strings to arrays
 */
+const MANIPULATING_STRING = "manipulating"
+console.log('["a", 1, false, {}, function(){}].length ==> ', ["a", 1, false, {}, function(){}].length)
+console.log(["a", 1, false, {}, function(){ return "Hello!"}][4]())
+console.log(MANIPULATING_STRING.split(""), Array.from(MANIPULATING_STRING), MANIPULATING_STRING.split())
+console.log("=============================")
+
+/* 
+    Manipulating arrays:
+        - Add item on the end
+        - Add item on the beginning
+        - Remove at end
+        - Remove on begin
+        - Take some elements from the array
+        - Remove one or more items in any array position
+        - Find the position of an element on array
+*/
+let techs = ["html", "css", "js"]
+techs.push("react")
+techs.unshift("node")
+console.log(techs)
+techs.pop()
+techs.shift()
+console.log(techs)
+console.log(techs.slice(1, 2), techs.slice(1, 3))
+techs.splice(0, 1)
+techs.splice(techs.length - 1, 1)
+console.log(techs, techs[0])
+console.log(techs.find(item => item !== undefined))
+console.log("=============================")
+
+/* 
+    Another slice() examples:
+*/
+let rgbyc = ["red", "green", "blue", "yellow", "cyan"]
+console.log(rgbyc.slice(3), rgbyc.slice(3, 4), rgbyc.slice(3, 3))
