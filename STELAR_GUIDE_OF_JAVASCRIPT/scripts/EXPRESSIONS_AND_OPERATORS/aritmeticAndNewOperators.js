@@ -18,5 +18,18 @@ console.log(
 )
 
 /* 
-    
+    Using all arithmetic operators: *, /, +, -, %, ++, --, **
+    We have already used the group operator: (>>>expression<<<)
 */
+let randNum = 22
+console.log(
+    1000*10000,
+    23/4,
+    2 + -2,
+    -2 - 2,
+    5 % 1,
+    (++randNum),
+    (--randNum),
+    2 ** 3,
+    ((1 + 5) ** 2) * 4 / 2
+)
